@@ -3,6 +3,8 @@ import sys
 import threading
 
 # Socks -a simple text messaging app to streach out socket programming skills
+# added some text
+# more text
 def clientthread(conn):
     '''handler for new connections'''
     conn.send(b'welcome to the server, type "quit" to quit\n')

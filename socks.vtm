@@ -1,0 +1,6 @@
+tmux new-session -d -n ed -s sesh 
+tmux split-window -v -p 30
+tmux selectp -t 0
+tmux split-window -h -p 75
+tmux selectp -t 1
+tmux -2 attach-session -d
