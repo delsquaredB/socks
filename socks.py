@@ -12,7 +12,7 @@ def clientthread(conn):
     while 1:
         data = conn.recv(1024)
         reply = 'you said...' + data.decode('utf-8')
-        # print(data)
+        print(data)
         if data[0:4] == b'quit':
             break
         conn.sendall(reply.encode('utf-8'))

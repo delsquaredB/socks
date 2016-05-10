@@ -1,0 +1,8 @@
+#start a new tmux session
+tmux new-session -d -n vimux -s sesh 'elinks' 
+tmux split-window -v -p 35 'python3' 
+tmux split-window -h -p 50 #'elinks'
+tmux selectp -t 0
+tmux split-window -h -p 80 'vim'
+tmux selectp -t 1 
+tmux -2 attach-session -d
